@@ -1,0 +1,9 @@
+@media only screen and (max-width: 540px) {
+    .about-text{
+        padding: 0;
+        margin-top: 0;
+    }
+    .service .container .card{
+        margin-top: 13%;
+    }
+}

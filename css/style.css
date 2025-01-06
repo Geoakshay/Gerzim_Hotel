@@ -82,6 +82,9 @@ body{
 .about img{
   border-radius: 0px 30% 30% 0px;
 }
+.about-text{
+  margin-top: 10%;
+}
 /* .about{
   background-image: url(../images/ab.png);
   background-size: cover;
@@ -131,25 +134,6 @@ body{
   font-size: 0.9rem;
   color: black;
 }
-/* .rotate-image {
-  display: inline-block;
-  animation: rotate-clockwise 45s linear infinite;
-  transform-origin: center center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg); 
-}
-
-@keyframes rotate-clockwise {
-  from {
-      transform: translate(-50%, -50%) rotate(0deg); 
-  }
-  to {
-      transform: translate(-50%, -50%) rotate(360deg); 
-  }
-} */
-
 
 
 
@@ -219,7 +203,7 @@ body{
 }
 .single_menu {
   position: relative;
-  margin-top: 30px;
+  margin-top: 5%;
   margin-bottom: 2px;
   transition: .3s;
 }
@@ -247,7 +231,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
   border-radius: 5px;
 }
 .menu_content {
-  padding-left: 200px;
+  padding-left: 36%;
 }
 .menu_content h4 {
   font-size: 25px;
