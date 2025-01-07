@@ -332,17 +332,15 @@ z-index: -1;
 }
 
 .carousel-nav button {
-  background-color: #ffc107;
+ background: transparent;
   border: none;
-  border-radius: 50%;
-  padding: 5px 20px;
   color: #fff;
-  font-size: 18px;
+  font-size: 38px;
   cursor: pointer;
 }
 
 .carousel-nav button:hover {
-  background-color: #e0a800;
+  color: #ffc107;
 }
 
 .owl-dots {
@@ -442,13 +440,13 @@ form button{
   background-color: #ffc107 !important;
 }
 input::-webkit-input-placeholder {
-  color: rgb(179, 176, 176) !important;
+  color: white !important;
 }
 ::placeholder{
-  color: rgb(179, 176, 176) !important;
+  color: white !important;
 }
 input:-moz-placeholder {
-  color: rgb(179, 176, 176) !important;
+  color: white !important;
 }
 .f-link a::before{
    content: "🍤 ";
