@@ -30,7 +30,7 @@
 <body>
 
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top" id="navigating">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
@@ -41,10 +41,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse naver" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About Us</a>
@@ -67,6 +67,8 @@
     </nav>
     <!-- NAV END -->
 
+
+    <article data-bs-spy="scroll" data-bs-target="#navigating" data-bs-offset="0" class="scrollspy-example" tabindex="0">
       <!-- HERO SEC START -->
       <div class="hero position-relative">
         <div class="hero-overlay"></div>
@@ -74,7 +76,7 @@
           <img src="images/name.png" class="img-fluid wow fadeInUp">
           <p class="wow fadeInUp">Are you looking for a place to eat? Look no further!</p>
           <div class="d-flex justify-content-center gap-3 mt-4 wow fadeInUp">
-            <a href="#our_menu" class="btn btn-warning btn-lg">Explore Menu</a>
+            <a href="http://gundanzcafe.com/" target="_blank" class="btn btn-warning btn-lg">Our Cafe</a>
             <!-- <a href="#reservation" class="btn btn-outline-light btn-lg">Book a Table</a> -->
           </div>
         </div>
@@ -115,9 +117,9 @@
             <h1 class="text-uppercase">Our Services</h1>
             <div class="single_line"></div>
           </div>
-          <div class="container py-2">
+          <div class="container-fluid p-5">
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-lg-4 ser">
                     <div class="card text-center p-4 wow fadeInUp">
                         <img src="images/services/catering-service.jpg" class="rotate-image" alt="Dish 1" loading="lazy">
                         <div class="card-body">
@@ -126,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-lg-4 ser">
                     <div class="card text-center p-4 wow fadeInUp">
                         <img src="images/services/indian-thali.jpg" class="rotate-image" alt="Dish 2" loading="lazy">
                         <div class="card-body">
@@ -135,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-lg-4 ser">
                     <div class="card text-center p-4 wow fadeInUp">
                         <img src="images/services/sea-food.jpg" class="rotate-image" alt="Dish 3" loading="lazy">
                         <div class="card-body">
@@ -168,7 +170,7 @@
             <div class="row">
               <ul class="nav nav-tabs menu_tab mb-4 justify-content-center" id="menuTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="breakfast-tab" data-bs-toggle="tab" href="#breakfast" role="tab">Breakfast</a>
+                  <a class="nav-link active" id="breakfast-tab" data-bs-toggle="tab" href="#breakfast" role="tab">Special</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="lunch-tab" data-bs-toggle="tab" href="#lunch" role="tab">Lunch</a>
@@ -185,86 +187,81 @@
                 <!-- Breakfast Tab -->
                 <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 py-2">
                       <div class="single_menu">
                         <img src="images/menu/nei-meen-varuval.jpg" class="img-fluid rounded" alt="Chicken Burger" loading="lazy">
                         <div class="menu_content">
                           <h4>நெய் மீன் சாப்பாடு</h4>
-                          <p>A delightful burger served with our special sauce and crispy fries.</p>
+                          <p>Savor the authentic taste of Nei Meen Sapadu, cooked to perfection!</p>
                         </div> 
                       </div>
-                      <!-- Repeat similar blocks for other items -->
                     </div>
-                    <div class="col-md-6">
-                      <div class="single_menu mb-4">
+
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
                         <img src="images/menu/parameen-varuval.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                         <div class="menu_content">
                           <h4>பாறை மீன் சாப்பாடு</h4>
-                          <p>Freshly brewed coffee to kickstart your morning.</p>
+                          <p>A hearty feast of traditional fish delicacies served with love.</p>
                         </div>
                       </div>
-                      <!-- Repeat similar blocks for other items -->
                     </div>
-                    <div class="col-md-6">
-                      <div class="single_menu mb-4">
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
                         <img src="images/menu/satti-soru.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                         <div class="menu_content">
                           <h4>சட்டி சோறு </h4>
-                          <p>Freshly brewed coffee to kickstart your morning.</p>
+                          <p>A traditional clay pot feast packed with authentic flavors.</p>
                         </div>
                       </div>
-                      <!-- Repeat similar blocks for other items -->
                     </div>
-                    <div class="col-md-6">
-                      <div class="single_menu mb-4">
-                        <img src="images/menu/mutton-talli.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/thalacurry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                         <div class="menu_content">
-                          <h4>ஆடு கறி சாப்பாடு </h4>
-                          <p>Freshly brewed coffee to kickstart your morning.</p>
+                          <h4>தல கறி </h4>
+                          <p>Thalacurry delivers authentic flavors and traditional spices.</p>
                         </div>
                       </div>
                     </div>
-                        <!-- Repeat similar blocks for other items -->
-                    <div class="col-md-6">
-                      <div class="single_menu mb-4">
-                        <img src="images/menu/duck-curry-thali.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/kappa-meen-curry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                         <div class="menu_content">
-                          <h4>வாத்து கறி சாப்பாடு </h4>
-                          <p>Freshly brewed coffee to kickstart your morning.</p>
+                          <h4>கப்பா மீன் கறி </h4>
+                          <p>Yam fish curry blends tender fish with flavorful, spiced yam for a hearty dish.</p>
                         </div>
                       </div>
                     </div>
-                        <!-- Repeat similar blocks for other items -->
-                    <div class="col-md-6">
-                      <div class="single_menu mb-4">
-                        <img src="images/menu/naatukozhi-sapadu.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/vaval.JPG" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                         <div class="menu_content">
-                          <h4>நாட்டு கோழி சாப்பாடு </h4>
-                          <p>Freshly brewed coffee to kickstart your morning.</p>
+                          <h4>வவ்வால் மீன் </h4>
+                          <p>Vaval fish offers a delicate, tender texture with a rich, savory taste.</p>
                         </div>
                       </div>
                     </div>
-                        <!-- Repeat similar blocks for other items -->
-                    <div class="col-md-6">
-                      <div class="single_menu mb-4">
-                        <img src="images/menu/seeragasamba-briyani.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/mathi-fry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                         <div class="menu_content">
-                          <h4>சீரக சம்பா சிக்கன் பிரியாணி </h4>
-                          <p>Freshly brewed coffee to kickstart your morning.</p>
+                          <h4>மத்தி வறுவல் </h4>
+                          <p>fish fry offers a crispy, golden exterior and a tender, flaky interior.</p>
                         </div>
                       </div>
                     </div>
-                        <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="images/menu/mutton-dum-briyani.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
-                            <div class="menu_content">
-                              <h4>மட்டன் தம் பிரியாணி</h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
-                            </div>
-                          </div>
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/squid-fry.JPG" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                        <div class="menu_content">
+                          <h4>கணவாய் வறுவல் </h4>
+                          <p>Squid brings a tender, subtly sweet taste with a delicate texture.</p>
                         </div>
-                            <!-- Repeat similar blocks for other items -->
+                      </div>
+                    </div>
+                    
+                        
                   </div>
                 </div>
         
@@ -273,93 +270,174 @@
                 <!-- Lunch Tab -->
                 <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
                   <div class="row">
-                      <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="images/menu/thalacurry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/mutton-talli.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                        <div class="menu_content">
+                          <h4>ஆடு கறி சாப்பாடு </h4>
+                          <p>Delight in the rich flavors of Mutton Curry Sapadu – a hearty, traditional feast.</p>
+                        </div>
+                      </div>
+                    </div>
+                        <!-- Repeat similar blocks for other items -->
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
+                            <img src="images/menu/naatukozhi-sapadu.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
-                              <h4>தல கறி </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <h4>நாட்டு கோழி சாப்பாடு </h4>
+                              <p>Relish the taste of Naatukozhi Sapadu</p>
                             </div>
                           </div>
                         </div>
                         <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="images/menu/vaval.JPG" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
+                            <img src="images/menu/duck-curry-thali.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
-                              <h4>வவ்வால் மீன் </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <h4>வாத்து கறி சாப்பாடு </h4>
+                              <p>Enjoy the bold flavors of Duck Curry Sapadu</p>
                             </div>
                           </div>
                         </div>
                         <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="images/menu/kappa-meen-curry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
+                            <img src="images/menu/seeragasamba-briyani.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
-                              <h4>கப்பா மீன் கறி </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <h4>சீரக சம்பா சிக்கன் பிரியாணி </h4>
+                              <p>Indulge in the aromatic Seeragasamba Biryani.</p>
                             </div>
                           </div>
                         </div>
                         <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
+                            <img src="images/menu/mutton-dum-briyani.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                            <div class="menu_content">
+                              <h4>மட்டன் தம் பிரியாணி</h4>
+                              <p>Indulge in our flavorful Mutton Dum Biryani.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Repeat similar blocks for other items -->
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
                             <img src="images/menu/crab.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
                               <h4>நண்டு </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <p>Crab offers a rich, buttery flavor and a tender, flaky texture.</p>
                             </div>
                           </div>
                         </div>
                         <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="images/menu/mathi-fry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
-                            <div class="menu_content">
-                              <h4>மத்தி வறுவல் </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
+                        
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
                             <img src="images/menu/prawn-fry.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
                               <h4>இறால் வறுவல் </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <p>Prawn fry offers a crispy, golden exterior and a tender, succulent interior.</p>
                             </div>
                           </div>
                         </div>
                         <!-- Repeat similar blocks for other items -->
-                        <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="images/menu/squid-fry.JPG" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                        <div class="col-md-6 py-2">
+                          <div class="single_menu">
+                            <img src="images/menu/anchovy.jpeg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
-                              <h4>கணவாய் வறுவல் </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <h4>நெத்திலி மீன் வறுவல் </h4>
+                              <p>It's a crispy, flavorful delight with rich spices.</p>
                             </div>
                           </div>
                         </div>
                         <!-- Repeat similar blocks for other items -->
+                        
                   </div>
                 </div>
         
                 <!-- Dinner Tab -->
                 <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
                   <div class="row">
-                      <div class="col-md-6">
-                          <div class="single_menu mb-4">
-                            <img src="https://i.imgur.com/lYKUORL.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                      <div class="col-md-6 py-2">
+                          <div class="single_menu">
+                            <img src="images/menu/parota.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
                             <div class="menu_content">
-                              <h4>Black Coffee </h4>
-                              <p>Freshly brewed coffee to kickstart your morning.</p>
+                              <h4>பரோட்டா </h4>
+                              <p>Parota is a soft, flaky flatbread that pairs perfectly with any curry.</p>
                             </div>
                           </div>
-                          <!-- Repeat similar blocks for other items -->
                         </div>
                     <!-- Repeat similar structure with dinner menu items -->
+                    <div class="col-md-6 py-2">
+                      <div class="single_menu">
+                        <img src="images/menu/paaladai.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                        <div class="menu_content">
+                          <h4>பாலாடை </h4>
+                          <p>Paaladai is a traditional, soft rice-based delicacy with a unique, comforting flavor.</p>
+                        </div>
+                      </div>
+                    </div>
+                <!-- Repeat similar structure with dinner menu items -->
+                <div class="col-md-6 py-2">
+                  <div class="single_menu">
+                    <img src="images/menu/aapom.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="menu_content">
+                      <h4>ஆப்பம் </h4>
+                      <p>It's a light, crispy pancake with a tender, soft center</p>
+                    </div>
+                  </div>
+                </div>
+            <!-- Repeat similar structure with dinner menu items -->
+                <div class="col-md-6 py-2">
+                  <div class="single_menu">
+                    <img src="images/menu/mutton-varutharacha.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                    <div class="menu_content">
+                      <h4>மட்டன் வறுத்து அரைத்த கறி </h4>
+                      <p>It's a rich, flavorful dish with roasted spices and tender meat.</p>
+                    </div>
+                  </div>
+                </div>
+            <!-- Repeat similar structure with dinner menu items -->
+              <div class="col-md-6 py-2">
+                <div class="single_menu">
+                  <img src="images/menu/mutton-varutharacha.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                  <div class="menu_content">
+                    <h4>மட்டன் ஸ்டூ </h4>
+                    <p>It's a creamy, aromatic dish with tender meat and mild spices.</p>
+                  </div>
+                </div>
+              </div>
+          <!-- Repeat similar structure with dinner menu items -->
+              <div class="col-md-6 py-2">
+                <div class="single_menu">
+                  <img src="images/menu/duck roast.JPG" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+                  <div class="menu_content">
+                    <h4>வாத்து வறுவல் </h4>
+                    <p>It's a crispy, flavorful dish with rich, smoky meat and spices.</p>
+                  </div>
+                </div>
+              </div>
+          <!-- Repeat similar structure with dinner menu items -->
+          <div class="col-md-6 py-2">
+            <div class="single_menu">
+              <img src="images/menu/mint-grill.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+              <div class="menu_content">
+                <h4>பெரிபெரி மற்றும் புதினா கோழி கிரில் </h4>
+                <p>It's a refreshing, smoky flavor with tender, juicy meat.</p>
+              </div>
+            </div>
+          </div>
+      <!-- Repeat similar structure with dinner menu items -->
+      <div class="col-md-6 py-2">
+        <div class="single_menu">
+          <img src="images/menu/idiyappam.jpg" class="img-fluid rounded" alt="Black Coffee" loading="lazy">
+          <div class="menu_content">
+            <h4>இடியப்பம் </h4>
+            <p>Idiyapam is a delicate, steamed rice noodle dish, perfect with curry or stew.</p>
+          </div>
+        </div>
+      </div>
+  <!-- Repeat similar structure with dinner menu items -->
                   </div>
                 </div>
               </div>
@@ -373,18 +451,18 @@
 
 
           <!-- Kadal Padayal Start -->
-          <section class="kadal-padayal" style="overflow: hidden;">
+          <!-- <section class="kadal-padayal" style="overflow: hidden;">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12">
 
                   <div class="header">
-                    <!--Content before waves-->
+                    
                     <div class="inner-header flex flexa">
                       <img src="images/kadal_padayal_2.png" class="img-fluid wow fadeInRight" width="100%" height="100%" loading="lazy" alt="Kadal">
                     </div>
               
-                    <!--Waves Container-->
+                  
                     <div>
                       <svg
                         class="waves"
@@ -423,13 +501,13 @@
                         </g>
                       </svg>
                     </div>
-                    <!--Waves end-->
+                  
                   </div>
-                  <!--Header ends-->
+                
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
            <!-- Kadal Padayal End -->
 
 
@@ -654,6 +732,7 @@
   <!-- Contact end -->
 </section>
    <!-- Contact End -->
+  </article>
 
 <!-- Footer Start -->
 
@@ -761,36 +840,37 @@
 
           <!-- Grid column -->
           <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end f-icon">
-            <!-- Facebook -->
-            <a
-               class="btn btn-outline-dark btn-floating m-1"
-               class="text-dark"
-               role="button"
-               ><i class="fa-brands fa-facebook-f text-dark"></i
-              ></a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/gerizimngl/" target="_blank"
+            class="btn btn-outline-dark btn-floating m-1"
+            class="text-dark"
+            role="button"
+            ><i class="fa-brands fa-instagram"></i
+           ></a>
+            
 
             <!-- Twitter -->
-            <a
+            <a href="#"
                class="btn btn-outline-dark btn-floating m-1"
                class="text-dark"
                role="button"
-               ><i class="fa-brands fa-twitter text-dark"></i
+               ><i class="fa-brands fa-twitter"></i
               ></a>
 
             <!-- Google -->
-            <a
+            <a href="#"
                class="btn btn-outline-dark btn-floating m-1"
                class="text-dark"
                role="button"
-               ><i class="fa-brands fa-google text-dark"></i
+               ><i class="fa-brands fa-google"></i
               ></a>
 
-            <!-- Instagram -->
-            <a
+            <!-- Facebook -->
+            <a href="#"
                class="btn btn-outline-dark btn-floating m-1"
                class="text-dark"
                role="button"
-               ><i class="fa-brands fa-instagram text-dark"></i
+               ><i class="fa-brands fa-facebook-f"></i
               ></a>
           </div>
           <!-- Grid column -->

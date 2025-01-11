@@ -1,3 +1,7 @@
+
+
+
+
 function sendDataToWhatsApp() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
@@ -10,7 +14,7 @@ function sendDataToWhatsApp() {
     }
 
     const whatsappMessage = `Name: ${name}\nEmail: ${email}\nPhoneNumber: ${subject}\nMessage: ${message}`;
-    const whatsappNumber = '9486915224';
+    const whatsappNumber = '9566776664';
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
     window.open(whatsappUrl, '_blank');

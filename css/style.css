@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 :root{
   --warning: #f5951c;
 }
-
-
 body{
   background-color: black;
 }
@@ -23,7 +24,17 @@ body{
     font-weight: bold;
     color: #f5951c;
   }
-
+  .nav-link.active {
+    background-color: #f5951c;
+    border-radius:10px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: #f5951c; /* Example color */
+  }
+  .nav-link.active:hover{
+    color: black !important;
+  }
+  
 
 /* --------------------------------------------------
     Header
@@ -135,7 +146,12 @@ body{
   color: black;
 }
 
-
+@media screen and (max-width: 765px) {
+  .ser{
+    margin-top: 20%;
+  }
+  
+}
 
 
 
@@ -212,6 +228,16 @@ body{
     position: relative;
     margin-bottom: 47px;
     transition: .3s;
+    margin-top: 9%;
+  }
+  
+}
+@media screen and (max-width: 991px) {
+  .single_menu {
+    position: relative;
+    margin-bottom: 47px;
+    transition: .3s;
+    margin-top: 9%;
   }
   
 }
@@ -223,7 +249,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 .single_menu img {
   width: 33%;
   position: absolute;
-  height: 140px;
+  height: 20vh;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   transition: .3s;
@@ -313,6 +339,7 @@ z-index: -1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
+
 
 .food-carousel .item h6 {
   margin-top: 10px;
@@ -457,12 +484,12 @@ input:-moz-placeholder {
 /* --------------------------------------------------
     FOOTER
 -----------------------------------------------------*/
-.products p a{
+/* .products p a{
   text-decoration: none;
 }
 .f-icon a,i:hover{
   color: white !important;
-}
+} */
 /* .fa-facebook-f:before, .fa-facebook:before{
   color: black;
 } */
